@@ -19,6 +19,8 @@ test = [
     "pytest>=8.3.1",
     "pytest-cov>=5.0.0",
 ]
+[project.scripts]
+my-history = 'lah.cli:cmd'
 
 [project.urls]
 Homepage = "https://github.com/lsiwh37249/lsh"
