@@ -9,8 +9,8 @@ def top(cnt, dt):
     fdf = df[df['dt'] == dt]
     sdf = fdf.sort_values(by='cnt', ascending=False).head(cnt)
     ddf = sdf.drop(columns=['dt'])
-    r = ddf.to_string(index=False)
-    
+    #r = ddf.to_string(index=False)
+    r = ddf
     return r
 
 def count(query):
@@ -18,3 +18,4 @@ def count(query):
     fdf = df[df['cmd'].str.contains(query)]
     cnt = fdf['cnt'].sum()
     return cnt
+    
