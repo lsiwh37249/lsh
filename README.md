@@ -40,5 +40,10 @@ pdm add -dG test pytest pytest-cov
 # main branch
 $ pip install git+https://github.com/lsiwh37249/lsh.git
 ```
-
+#  option 
+$ pdm init
+$ pdm venv create
+$ source .venv/bin/activate
+$ pdm add -dG test pytest pytest-cov
+$ pytest
 
