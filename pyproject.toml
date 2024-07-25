@@ -1,6 +1,6 @@
 [project]
 name = "lah"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "lsiwh37249", email = "lsiwh37249@gmail.com"},
@@ -13,3 +13,9 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.1",
+    "pytest-cov>=5.0.0",
+]
