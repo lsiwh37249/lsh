@@ -5,20 +5,24 @@
 ### 사용법
 ```
 $ my-history -s ls
-ls 사용 횟수는 1234회 입니다.
+
+ls None None
+-s => ls
+13920
 
 $ my-history -t 10 -d 2024-07-17
-  cmd  cnt
-pyenv 4256
-   cd 3472
-  git 3396
-mkdir 1932
-  pip 1592
-  cat 1368
-   vi 1356
- sudo 1320
-  pdm 1220
-   rm 1104
+
+None 10 2024-07-12
+-t => 10
+-d => 2024-07-12
+|     | cmd   |   cnt |
+|----:|:------|------:|
+| 285 | pwd   |    17 |
+| 287 | pwd   |    17 |
+| 289 | pwd   |    17 |
+| 286 | sl    |     0 |
+| 288 | sl    |     0 |
+| 290 | sl    |     0 |
 ```
 
 ### Dev env setting

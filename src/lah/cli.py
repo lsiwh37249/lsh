@@ -5,10 +5,7 @@ from tabulate import tabulate
 def hello_msg():
     return "hello"
 
-def cmd():
-    msg = hello_msg()
-    print(msg)
-    
+def cmd():    
     parser = argparse.ArgumentParser(prog='ProgramName', description='What the program does')
 
     parser.add_argument('-s', '--scount') # positional argument
